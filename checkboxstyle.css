@@ -1,0 +1,40 @@
+body {
+	background: pink;
+}
+
+label {
+	position: relative;
+}
+
+input {
+	display: none;
+}
+
+label:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid black;
+	vertical-align: middle;
+}
+
+input:checked + label:before {
+	content: "";
+}
+
+input:checked + label:after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: #000;
+	vertical-align: middle;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background: url(../images/galochka.png) no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
